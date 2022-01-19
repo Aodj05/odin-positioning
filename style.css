@@ -138,15 +138,98 @@ a{
 
 .content1 {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 423px 1fr 1fr;
 }
 
 .cont1 {
-	
+	grid-column: 2/2;
+}
+
+.cont1 h1 {
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    grid-row: 1 / 2;
 }
 
 .cont1 img{
     height: 5%;
     width: 5%;
+    grid-row: 2 / 3;
 }
 
+/*Side bar*/
+
+.sidebar {
+    top: 3.313rem;
+    width: 18.75rem;
+}
+
+.sdbr {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+
+}
+
+.sd-btns {
+	background-color: #f5f5f5;
+    display: flex;
+    overflow: hidden;
+}
+
+.sdbr button {
+	border: none;
+	border-right: 3px solid #fff;
+	cursor: pointer;
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+	outline: none;
+}
+
+/*Content2*/
+
+.content2 {
+
+}
+
+.cont2 {
+	display: flex;
+}
+
+.cont2 .c2-social {
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 17rem;
+    margin: 23px 0rem 0 19rem;
+    height: fit-content;
+}
+
+.c2-social img {
+    height: 26px;
+    width: 28px;
+}
+
+.c2-mag {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.c2-mns {
+	display: grid;
+}
+
+/*Footer*/
+
+.ftr-cont {
+	margin: 0;
+    max-width: 70.62495rem;
+    padding: 0 .93747rem;
+}
+
+.ftr-cont img {
+	height: 100px;
+	width: 100px;
+}
