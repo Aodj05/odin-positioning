@@ -1,5 +1,5 @@
 * {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 0;
 	padding: 0;
 	font-family: "PT Serif",Georgia,serif;
@@ -11,6 +11,10 @@ body {
 
 a{
 	text-decoration: none;
+}
+
+figcaption {
+	margin-bottom: 36px;
 }
 
 /*Header*/
@@ -28,6 +32,7 @@ a{
     margin: auto;
     margin-bottom: .7rem;
     margin-top: 1.5rem;
+    margin-left: 26rem;
 }
 
 .hdr a {
@@ -80,7 +85,7 @@ a{
     display: flex;
     flex: 1;
     justify-content: space-evenly;
-    margin: 0 22rem 0 25rem;
+    margin: 0 22rem 0 20rem;
 }
 
 .sticky {
@@ -153,10 +158,79 @@ a{
     grid-row: 1 / 2;
 }
 
-.cont1 img{
+.c1-social img{
     height: 5%;
     width: 5%;
     grid-row: 2 / 3;
+}
+
+.cont1 figcaption p {
+	font-size: 12px;
+}
+
+.cont1 img {
+	margin-top: 10px;
+}
+
+.cont1 p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.cont1 .tip {
+    background-color: #f5f5f5;
+    margin: 27px 0 31px 0;
+    padding: 13px 0 11px 13px;
+}
+
+.cont1 a{
+	color: #00b3e5;
+	text-decoration: none;
+}
+
+.cont1 .img-cap {
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+	font-size: .75rem;
+	line-height: 1rem;
+	font-weight: 700;
+}
+
+.c1-social {
+	margin: 0 0 15px 0;
+	cursor: pointer;
+}
+
+.cont1 .ref {
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif!important;
+	margin: 10px 0 10px 0;
+	font-size: .9rem;
+	font-weight: 700;
+	line-height: 1.2rem;
+}
+
+.ref i {
+	font-family: "PT Serif",Georgia,serif!important;
+	font-weight: 400;
+	line-height: 1.2rem;
+}
+
+.more {
+	margin: 20px 0 20px 0;
+	display: flex;
+}
+
+.more .tsbtn {
+	margin-left: 14px;
+	border: none;
+	background-color: #005587;
+	color: white;
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 2rem;
+	cursor: pointer;
+	border-radius: .2rem;
+	padding: revert;
 }
 
 /*Side bar*/
@@ -170,13 +244,12 @@ a{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 2rem;
-
+	margin-left: 1rem;
 }
 
-.sd-btns {
-	background-color: #f5f5f5;
-    display: flex;
-    overflow: hidden;
+.sd-btn {
+	width: max-content;
+	margin-bottom: 2px;
 }
 
 .sdbr button {
@@ -184,7 +257,34 @@ a{
 	border-right: 3px solid #fff;
 	cursor: pointer;
 	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
-	outline: none;
+	font-size: .9rem;
+	font-weight: 700;
+	padding: .5rem;
+}
+
+
+.cards li {
+	background-color: #f5f5f5;
+	border-top: 3px solid #fff;
+	display: flex;
+	font-family: Titillium Web,Helvetica,Trebuchet MS,Arial,sans-serif;
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	padding: .6rem;
+}
+
+.cards a {
+	text-decoration: none;
+	color: black;
+	margin-right: 1.4rem;
+}
+
+.cards p {
+	color: #00b3e5;
+	font-size: 40px;
+	margin-top: 18px;
+	font-family: "PT Serif",Georgia,serif;
 }
 
 /*Content2*/
@@ -195,30 +295,43 @@ a{
 
 .cont2 {
 	display: flex;
+	justify-content: space-between;
 }
 
 .cont2 .c2-social {
-	display: flex;
+    display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
     width: 17rem;
-    margin: 23px 0rem 0 19rem;
+    margin: 23px 0rem 0 25rem;
     height: fit-content;
 }
 
 .c2-social img {
     height: 26px;
     width: 28px;
+    cursor: pointer;
 }
 
 .c2-mag {
     display: flex;
     align-items: center;
     height: fit-content;
+    margin-right: 50rem;
+}
+
+.mag-btn {
+	display: flex;
+	flex-direction: column;
 }
 
 .c2-mns {
 	display: grid;
+}
+
+.c2-mns img {
+	height: 100px;
+	width: 100px;
 }
 
 /*Footer*/
