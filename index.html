@@ -14,7 +14,7 @@
 				<p><a href="#">Sign up to read our regular email newsletters</a></p>
 			</div>
 			<span class="title"><img src="img/ns.png"></a></span>
-			<button>GET 6 WEEKS FREE</button>
+			<button>GET 6 WEEKS FREE</a>
 		</div>
 		<div class="navbar" id="navbar">
 			<ul>
@@ -74,17 +74,17 @@
 			<i>Sign up to our free <a href="#">Launchpad</a> newsletter for a voyage across the galaxy and beyond, every Friday</i>
 			<div class="more">
 				<p class="ref">More on these topics: </p>
-				<button class="tsbtn">PLANETS</button>
-				<button class="tsbtn">MARS</button>
+				<button class="tsbtn">PLANETS</a>
+				<button class="tsbtn">MARS</a>
 			</div>
 		</div>
-		<div class="sidebar">
+		<div class="sidebar" id="sidebar">
 			<div class="sdbr">
 				<div class="sd-btn">
-					<button class="sd1">TRENDING</button>
-					<button class="sd">LATEST</button>
-					<button class="sd">VIDEO</button>
-					<button class="sd">FREE</button>
+					<button class="sd1">TRENDING</a>
+					<button class="sd">LATEST</a>
+					<button class="sd">VIDEO</a>
+					<button class="sd">FREE</a>
 				</div>
 				<div class="cards">
 					<ol>
@@ -113,9 +113,9 @@
 			<div class="c2-mag">
 				<img src="img/mag.jpg" alt="magazine">
 				<div class="mag-btn">
-					<button class="mb1">SUBSCRIBE</button>
-					<button class="mb2">VIEW IN THE APP</button>
-					<button class="mb3">BUY IN PRINT</button>
+					<button class="mb1">SUBSCRIBE</a></button>
+					<button class="mb2">VIEW IN THE APP</a></button>
+					<button class="mb3">BUY IN PRINT</a></button>
 				</div>
 			</div>
 		</div>
@@ -141,55 +141,94 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
 
 	<footer class="ftr">
 		<div class="ftr-cont">
 			<div class="ftr-top">
-				<h1>Sign up to our newsletters</h1>
-				<form>
-					Enter your email address to get started
+				<h3>Sign up to our newsletters</h3>
+				<form class="signup-form" action="/sign-up" method="POST">
+					<input type="hidden" name="newsletter" value="true">
+					<input type="hidden" name="disable_errors" value="true">
+					<label for="signup-email" class="sgn-up-lbl">Enter your email address to get started</label>
+					<input type="email" name="sgn-up-list" class="sgn-up-input" placeholder="Your email" required="required">
+					<input type="submit" class="sgn-up-btn" value="Sign up">
 				</form>
 			</div>
-			<button class="ftr-signup">SIGN UP</button>
-			<button class="btn-ftr">Contact us</button>
-			<button class="btn-ftr">Help</button>
-			<button class="btn-ftr">About us</button>
-			<button class="btn-ftr">Privacy policy</button>
-			<button class="btn-ftr">Cookie policy</button>
-			<button class="btn-ftr">Terms & conditions</button>
-			<button>Advertise</button><button class="btn-ftr">Write for us</button><button class="btn-ftr">Events</button>
-			<button class="btn-ftr">Science jobs</button>
-			<button class="btn-ftr">Syndication</button>
-			<button class="btn-ftr">RSS feeds</button>
-			<button class="btn-ftr">Gift subscriptions</button>
-			<button class="btn-ftr">Student subscriptions</button>
-			<button class="btn-ftr">Educational subscriptions</button>
-			<button class="btn-ftr">Corporate subscriptions</button>
-			<button class="topics">COOKIE SETTINGS</button>
-			GET THE APP<button class="app"><img src="img/apple.jpg" alt="istore"></button>
-			<button class="app"><img src="img/google.png" alt="google play"></button>
-			FOLLOW US<button class="follow"><img src="img/facebook.png" alt="facebook"></button>
-			<button class="follow"><img src="img/twitter.png" alt="twitter"></button>
-			<button class="follow"><img src="img/linkedin.png" alt="linkedin"></button>
-			<button class="follow"><img src="img/pinterest.png" alt="pintrest"></button>
-			<p>© Copyright New Scientist Ltd.</p>
-			<button>Back to top<img src="img/up-arrow.png" alt="up"></button>
+			<nav class="ftr-navb">
+				<ul>
+					<li class="anav"><a href="#" class="anav">Contact us</a></li>
+					<li class="anav"><a href="#" class="anav">Help</a></li>
+					<li class="anav"><a href="#" class="anav">About us</a></li>
+					<li class="anav"><a href="#" class="anav">Privacy policy</a></li>
+					<li class="anav"><a href="#" class="anav">Cookie policy</a></li>
+					<li class="anav"><a href="#" class="anav">Terms & conditions</a></li>
+				</ul>
+			</nav>
+			<nav class="ftr-nav">
+				<ul>
+					<li class="anav"><a href="#">Advertise</a></li>
+					<li class="anav"><a href="#">Write for us</a></li>
+					<li class="anav"><a href="#">Events</a></li>
+					<li class="anav"><a href="#">Science jobs</a></li>
+					<li class="anav"><a href="#">Syndication</a></li>
+					<li class="anav"><a href="#">RSS feeds</a></li>
+				</ul>
+			</nav>
+			<nav class="ftr-nav">
+				<ul>
+					<li class="anav"><a href="#">Gift subscriptions</a></li>
+					<li class="anav"><a href="#">Student subscriptions</a></li>
+					<li class="anav"><a href="#">Educational subscriptions</a></li>
+					<li class="anav"><a href="#">Corporate subscriptions</a></li>
+				</ul>
+				<button class="sgn-up-btn" id="cookie">COOKIE SETTINGS</button>
+			</nav>
+			<div class="ftr-app-cp">
+				<div class="ftr-apps">
+					<h3>GET THE APP</h3>
+					<div class="ftr-app-btn">
+						<a href="#"><img src="img/apple.jpg" alt="istore"></a>
+					</div>
+					<div class="ftr-app-btn">
+						<a href="#"><img src="img/google.png" alt="google play"></a>
+					</div>
+				</div>
+				<section class="ftr-social">
+					<h3>FOLLOW US</h3>
+					<div class="ftr-social-btn">
+						<a href="#" class="social-link"><img src="img/facebook.png" alt="facebook"></a>
+						<a href="#" class="social-link"><img src="img/twitter.png" alt="twitter"></a>
+						<a href="#" class="social-link"><img src="img/linkedin.png" alt="linkedin"></a>
+						<a href="#" class="social-link"><img src="img/pinterest.png" alt="pintrest"></a>
+					</div>
+				</section>
+				<div class="cp-btt">
+					<div class="cp-btt-cont">
+						<div class="cp">© Copyright New Scientist Ltd.</div>
+						<div class="btt"><a href="#" class="btt-link">Back to top<img src="img/up-arrow.png" alt="up"></a></div>
+					</div>	
+				</div>
+			</div>
 		</div>
 	</footer>
 
-	<!--<script>
+	<script>
 		window.onscroll = function() {myFunction()};
 		var navbar = document.getElementById('navbar')
+		var sidebar = document.getElementById('sidebar')
 		var sticky = navbar.offsetTop;
 		function myFunction() {
 			if (window.pageYOffset >= sticky) {
 				navbar.classList.add("sticky")
+				sidebar.classList.add("sticky")
 			} else {
 				navbar.classList.remove("sticky")
+				sidebar.classList.remove("sticky")
 			}
 		}
-	</script>-->
+	</script>
 
 </body>
 </html>
